@@ -31,7 +31,7 @@ const connect = async () => {
 app.use(express.urlencoded({extended : true}));
 app.use(express.json());
 app.use(cors({
-    origin:'http://localhost:3001'
+    origin:'https://verdant-rugelach-80eb78.netlify.app/'
 }));
 app.use(cookieParser());
 app.use(express.json())
