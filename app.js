@@ -31,7 +31,8 @@ const connect = async () => {
 app.use(express.urlencoded({extended : true}));
 app.use(express.json());
 app.use(cors({
-    origin:'https://verdant-rugelach-80eb78.netlify.app/'
+  origin: 'https://verdant-rugelach-80eb78.netlify.app',
+  credentials: true,  // Enable credentials (cookies, etc.)
 }));
 app.use(cookieParser());
 app.use(express.json())
